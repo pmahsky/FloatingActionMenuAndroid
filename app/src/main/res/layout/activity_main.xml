@@ -62,6 +62,7 @@
                 android:orientation="horizontal"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toTopOf="@+id/createLayout"
+                app:layout_constraintLeft_toLeftOf="@+id/createLayout"
                 app:layout_constraintRight_toRightOf="@+id/activity_main">
 
                 <TextView
@@ -71,13 +72,12 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:background="@drawable/shape_fab_label"
-                    android:fontFamily="cursive"
+                    android:elevation="2dp"
+                    android:fontFamily="sans-serif"
                     android:padding="5dip"
                     android:text="Share"
                     android:textColor="@android:color/white"
-                    android:typeface="normal"
-                    android:elevation="5dp"
-                     />
+                    android:typeface="normal" />
 
 
                 <android.support.design.widget.FloatingActionButton
@@ -113,12 +113,12 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:background="@drawable/shape_fab_label"
-                    android:fontFamily="cursive"
+                    android:elevation="2dp"
+                    android:fontFamily="sans-serif"
                     android:padding="5dip"
                     android:text="Create"
                     android:textColor="@android:color/white"
-                    android:typeface="normal"
-                    android:elevation="5dp"/>
+                    android:typeface="normal" />
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/createFab"
