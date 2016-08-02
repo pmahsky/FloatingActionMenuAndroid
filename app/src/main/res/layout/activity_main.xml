@@ -75,7 +75,9 @@
                     android:padding="5dip"
                     android:text="Share"
                     android:textColor="@android:color/white"
-                    android:typeface="normal" />
+                    android:typeface="normal"
+                    android:elevation="5dp"
+                     />
 
 
                 <android.support.design.widget.FloatingActionButton
@@ -115,7 +117,8 @@
                     android:padding="5dip"
                     android:text="Create"
                     android:textColor="@android:color/white"
-                    android:typeface="normal" />
+                    android:typeface="normal"
+                    android:elevation="5dp"/>
 
                 <android.support.design.widget.FloatingActionButton
                     android:id="@+id/createFab"
