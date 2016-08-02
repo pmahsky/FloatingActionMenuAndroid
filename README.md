@@ -4,9 +4,12 @@ This project is inspired from Gmail like Floating Action Menu in Android App. Te
 
 [![FloatingActionMenuAndroid](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/demo_gif.gif)](#features)
 
-[![FloatingActionMenuAndroid](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/screenshot_roboto.png)](#features)
+#FabMenu TextView font in Roboto font-family
+[![](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/screenshot_roboto.png)](#features)
 
 
-[![FloatingActionMenuAndroid](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/screenshot_cursive.PNG)](#features)
+#FabMenu TextView font in new Cursive font-family 
+[![](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/screenshot_cursive.PNG)](#features)
+
 
 Soon I'll add the Navigation Drawer to the same Activity and Floating Action Menu will have a smooth transition in its Alpha range to hide and show on Drawer open/close.
