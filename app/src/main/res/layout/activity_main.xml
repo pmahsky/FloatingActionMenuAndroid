@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="FabHandler"
+            type="com.app.fabmenu.MainActivity.FabHandler" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/app_name"
+                app:titleTextColor="@android:color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.app.fabmenu.MainActivity">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/baseFloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:onClick="@{FabHandler::onBaseFabClick}"
+                android:tint="@android:color/white"
+                app:fabSize="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+                app:layout_constraintRight_toRightOf="@+id/activity_main"
+                app:srcCompat="@drawable/ic_add_black_24dp" />
+
+            <LinearLayout
+                android:id="@+id/shareLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/createLayout"
+                app:layout_constraintRight_toRightOf="@+id/activity_main">
+
+                <TextView
+                    android:id="@+id/shareLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape_fab_label"
+                    android:fontFamily="cursive"
+                    android:padding="5dip"
+                    android:text="Share"
+                    android:textColor="@android:color/white"
+                    android:typeface="normal" />
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/shareFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="@{FabHandler::onShareFabClick}"
+                    android:tint="@android:color/white"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_share_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/createLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/baseFloatingActionButton"
+
+                app:layout_constraintRight_toRightOf="@+id/activity_main">
+
+                <TextView
+                    android:id="@+id/createLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/shape_fab_label"
+                    android:fontFamily="cursive"
+                    android:padding="5dip"
+                    android:text="Create"
+                    android:textColor="@android:color/white"
+                    android:typeface="normal" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/createFab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="@{FabHandler::onCreateFabClick}"
+                    android:tint="@android:color/white"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ic_create_black_24dp" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
