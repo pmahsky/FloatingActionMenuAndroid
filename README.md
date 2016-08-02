@@ -4,3 +4,4 @@ This project is inspired from Gmail like Floating Action Menu in Android App. Te
 
 [![FloatingActionMenuAndroid](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/screenshot.PNG)](#features)
 
+[![FloatingActionMenuAndroid](https://github.com/pmahsky/FloatingActionMenuAndroid/blob/master/Screenshot/demo.mp4)](#features)
