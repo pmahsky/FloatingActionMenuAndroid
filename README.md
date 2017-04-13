@@ -13,4 +13,3 @@ This project is inspired from Gmail like Floating Action Menu in Android App. Te
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FloatingActionMenuAndroid-green.svg?style=true)](https://android-arsenal.com/details/3/4059)
 
-Soon I'll add the Navigation Drawer to the same Activity and Floating Action Menu will have a smooth transition in its Alpha range to hide and show on Drawer open/close.
